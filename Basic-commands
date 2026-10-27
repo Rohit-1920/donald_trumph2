@@ -1,0 +1,46 @@
+# 🐧 Basic Linux Commands Cheat Sheet
+
+A beginner-friendly guide to essential Linux terminal commands for system navigation, file management, and system information.
+
+---
+
+## 📂 File & Directory Navigation
+Manage and traverse directories within the terminal.
+
+*   **`pwd`** — Print Working Directory. Displays the full path of your current location.
+*   **`ls`** — List files and folders in the current directory.
+    *   `ls -l` — Long format listing (shows permissions, owner, size, and date).
+    *   `ls -a` — Lists all files, including hidden ones (files starting with a `.`).
+*   **`cd [directory]`** — Change Directory to move to a specific folder.
+    *   `cd ..` — Move up one level to the parent directory.
+    *   `cd ~` — Go directly to your home directory.
+
+## 📄 File & Directory Operations
+Create, copy, move, and delete files or folders.
+
+*   **`mkdir [folder_name]`** — Create a new directory.
+*   **`touch [file_name]`** — Create an empty file.
+*   **`cp [source] [destination]`** — Copy files.
+    *   `cp -r [source_dir] [dest_dir]` — Copy a directory and all its contents recursively.
+*   **`mv [source] [destination]`** — Move or rename files and directories.
+*   **`rm [file_name]`** — Delete a file.
+*   **`rm -r [folder_name]`** — Delete a folder and all its contents permanently.
+
+## 🔍 Viewing & Editing Files
+Read and inspect file data directly from the terminal.
+
+*   **`cat [file_name]`** — Display the entire content of a file.
+*   **`head -n [number] [file_name]`** — View the first *n* lines of a file.
+*   **`tail -n [number] [file_name]`** — View the last *n* lines of a file.
+*   **`less [file_name]`** — Open a file in a scrollable view (press `q` to exit).
+*   **`grep "[search_term]" [file_name]`** — Search for a specific word or phrase inside a file.
+
+## 🛠️ System Information & Permissions
+Check system status and modify access controls.
+
+*   **`uname -a`** — Display detailed system and kernel information.
+*   **`df -h`** — Show available disk space in human-readable format.
+*   **`top`** — Display real-time running processes and system resource usage (press `q` to exit).
+*   **`chmod [permissions] [file_name]`** — Change file read/write/execute permissions (e.g., `chmod +x script.sh`).
+*   **`sudo [command]`** — Execute a command with administrative/root privileges.
+*   **`clear`** — Clear the terminal screen.
